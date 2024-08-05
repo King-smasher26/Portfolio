@@ -2,7 +2,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
 import { darkTheme } from './theme';
-
 const IntroSection = styled.section`
   display: flex;
   align-items: center;
@@ -54,7 +53,7 @@ const Intro = () => {
     <IntroSection>
       <ContentWrapper>
         <Avatar
-          src="/images/avatar-portfolio.jpg"
+          src={`${process.env.PUBLIC_URL}/avatar-portfolio.jpg`}
           alt="Your Name"
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
